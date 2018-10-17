@@ -33,4 +33,14 @@ $(function() {
             $(".navbar-toggle").trigger( "click" );
         }
     });
+
+    /* Update Copyright Year
+    PS : Year will be updated as set in users deskstop,tab,mobile devices
+    */
+    var updateYear = document.getElementById('current_year'); 
+    var copyrightDate =  new Date();  
+    var year = copyrightDate.getFullYear();
+
+    updateYear.textContent = year;
 });
+
